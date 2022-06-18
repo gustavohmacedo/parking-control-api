@@ -1,5 +1,6 @@
 package com.api.parkingcontrol.models;
 
+import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -8,8 +9,7 @@ import java.io.Serializable;
 import java.time.LocalDateTime;
 import java.util.UUID;
 
-@Getter
-@Setter
+@Data
 @Entity
 @Table(name = "TB_PARKING_SPOT")
 public class ParkingSpot implements Serializable {
