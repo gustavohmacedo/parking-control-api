@@ -1,8 +1,6 @@
 package com.api.parkingcontrol.models;
 
 import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -12,10 +10,10 @@ import java.util.UUID;
 @Data
 @Entity
 @Table(name = "TB_PARKING_SPOT")
-public class ParkingSpot implements Serializable {
+public class ParkingSpotModel implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private UUID id;
+    private Long id;
 
     @Column(nullable = false, unique = true, length = 10)
     private String parkingSpotNumber;
