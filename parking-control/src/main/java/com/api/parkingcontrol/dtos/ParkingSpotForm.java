@@ -6,7 +6,7 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
 
 @Data
-public class ParkingSpotDto {
+public class ParkingSpotForm {
 
     @NotBlank
     private String parkingSpotNumber;
